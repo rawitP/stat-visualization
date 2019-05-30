@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <nav class="navbar sticky-top navbar-dark bg-dark shadow-sm">
-        <span class="navbar-brand text-truncate d-inline-block">งบประมาณกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</span>
+        <span class="navbar-brand text-truncate d-inline-block"><i class="fas fa-search-dollar text-success"></i> งบประมาณกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</span>
       </nav>
       <main>
         <div className="cover-wrapper bg-white">
@@ -15,9 +15,9 @@ function App() {
             // <div className="div-cover" style={{ backgroundImage: `url(${coverImg})`, backgroundPosition: 'center', filter: 'brightness(60%)' }}></div>
           }
           <div className="container">
-            <div className="row p-5">
+            <div className="row py-5 p-lg-5">
               <div className="col-lg-4 text-center order-lg-last">
-                <img src={mdesLogoImg} className="img-fluid rounded bg-white p-3 my-n3"></img>
+                <img src={mdesLogoImg} alt="mdes_logo" className="img-fluid rounded bg-white p-3 my-n3"></img>
               </div>
               <div className="col-lg-8 mt-4 mt-lg-0 order-lg-first">
                 <h1>กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม</h1>
@@ -28,15 +28,21 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-wrap justify-content-center" style={{ backgroundColor: '#e9ecef' }}>
-          <iframe className="d-block mx-3 my-3 shadow-sm border rounded bg-white" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTeOBSfsKrjFVzaIpmGX_LIpQfgSQYajUFjnDp6_PKG1OBvz_XRu_GmcxrWCD1oB070JTm16to6zPNh/pubchart?oid=1920476824&amp;format=interactive"></iframe>
-          <iframe className="d-block mx-3 my-3 shadow-sm border rounded bg-white" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZUP1yRlr4dizcMElBRLNRyY1aqmYU9HYD4G0VoqJAuTbggcx51laZL91_Y-2exPvWyNtHQpYjh7y/pubchart?oid=523828327&amp;format=interactive"></iframe>
-          <iframe className="d-block mx-3 my-3 shadow-sm border rounded bg-white" width="600" height="474" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQc5INLYjrbmaIoIO4iDztjOCIIwCk7B_gord2mi3rR5vzexxl6PS9DV9B_4OjCqSpwJmxwCTgVNY22/pubchart?oid=267339736&amp;format=interactive"></iframe>
+        <div className="container-fluid text-center" style={{ backgroundColor: '#e9ecef' }}>
+          <div className="div-title d-inline-block mt-3 p-3">
+            <h2>กราฟแสดงข้อมูลทางสถิติ</h2>
+            <hr className="text-muted"></hr>
+          </div>
+          <div className="d-flex flex-wrap justify-content-center">
+            <iframe className="d-block mx-3 my-3 shadow-sm border rounded bg-white" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTeOBSfsKrjFVzaIpmGX_LIpQfgSQYajUFjnDp6_PKG1OBvz_XRu_GmcxrWCD1oB070JTm16to6zPNh/pubchart?oid=1920476824&amp;format=interactive"></iframe>
+            <iframe className="d-block mx-3 my-3 shadow-sm border rounded bg-white" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZUP1yRlr4dizcMElBRLNRyY1aqmYU9HYD4G0VoqJAuTbggcx51laZL91_Y-2exPvWyNtHQpYjh7y/pubchart?oid=523828327&amp;format=interactive"></iframe>
+            <iframe className="d-block mx-3 my-3 shadow-sm border rounded bg-white" width="600" height="474" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQc5INLYjrbmaIoIO4iDztjOCIIwCk7B_gord2mi3rR5vzexxl6PS9DV9B_4OjCqSpwJmxwCTgVNY22/pubchart?oid=267339736&amp;format=interactive"></iframe>
+          </div>
         </div>
       </main>
       <footer className="bg-white py-3 shadow">
         <div className="container">
-          <span className="d-block text-muted text-center">จัดทำโดย <span className="text-primary">รวิชญ์ ปานเจริญ</span></span>
+          <span className="d-block text-muted text-center"><i class="fas fa-user-edit"></i> จัดทำโดย <span className="text-primary">รวิชญ์ ปานเจริญ</span></span>
         </div>
       </footer>
     </div>

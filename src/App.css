@@ -12,3 +12,20 @@
   left: 0;
   z-index: -1;
 }
+
+.div-title {
+  display: inline-block;
+}
+
+.div-title i {
+  font-size: 2em;
+}
+
+.div-title h2 {
+  margin: 0;
+}
+
+.div-title hr {
+  border-top: 2px solid;
+  margin: 0.5rem 0;
+}
